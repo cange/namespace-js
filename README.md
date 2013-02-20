@@ -5,9 +5,8 @@ Is compatible with all new and old browsers like IE6.
 
 ## Usage
 ```
-Namespace.is('foo.bar'); // -> false
-
-Namespace.create('foo.bar'); // -> [object]
-
-Namespace.is('foo.bar'); // -> true
+Namespace.create('foo.bar');
+foo.bar.Magic = function () {
+  // your magic code
+};
 ```
