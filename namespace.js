@@ -58,4 +58,4 @@ var Namespace = (function (global) {
 
   };
 
-}());
+}(this));
