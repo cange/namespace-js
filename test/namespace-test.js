@@ -1,7 +1,6 @@
 'use strict';
 
 module('Namespace.js', {
-  setup: function () {},
   teardown: function () {
     delete window.testNS;
   }
