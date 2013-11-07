@@ -1,25 +1,33 @@
+/**!
+ * @author Christian Angermann https://github.com/cange/namespace-js
+ * @license MIT
+ */
+/**
+ * @module Namespace
+ * @class Namespace
+ * @type function
+ */
 var Namespace = (function (global) {
-
   'use strict';
 
   return {
 
     /**
      * Creates a global object in a single line.
-     * // example
-     * Namespace.create('foo.bar'); // -> foo.bar
-     *
-     * @param {string} namespace
+     * @method create
+     * @param {String} namespace
+     * @example
+     *   Namespace.create('foo.bar'); // -> foo.bar
      */
     create: function (namespace) {
       var parent = global,
-        parts = namespace.split('.'),
-        len = parts.length,
-        part,
-        i
+          parts = namespace.split('.'),
+          len = parts.length,
+          i = 0,
+          part
       ;
 
-      for (i = 0; i < len; i++) {
+      for (; i < len; i++) {
         part = parts[i];
         parent = (parent[part] = parent[part] || {});
       }
@@ -27,22 +35,23 @@ var Namespace = (function (global) {
 
     /**
      * Check for global object.
-     * // example
-     * Namespace.is('foo.bar'); // -> false
-     * Namespace.create('foo.bar'); // -> foo.bar
-     * Namespace.is('foo.bar'); // -> true
-     *
-     * @param {string} namespace
+     * @method is
+     * @param {String} namespace
+     * @return {Boolean}
+     * @example
+     *   Namespace.is('foo.bar'); // -> false
+     *   Namespace.create('foo.bar'); // -> foo.bar
+     *   Namespace.is('foo.bar'); // -> true
      */
     is: function (namespace) {
       var parent = global,
-        result = false,
-        parts = namespace.split('.'),
-        len = parts.length,
-        part,
-        i
+          result = false,
+          parts = namespace.split('.'),
+          len = parts.length,
+          i = 0,
+          part
       ;
-      for (i = 0; i < len; i++) {
+      for (; i < len; i++) {
         part = parts[i];
 
         if (!parent[part]) {
