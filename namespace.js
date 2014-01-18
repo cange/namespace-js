@@ -7,7 +7,7 @@
  * @class Namespace
  * @type function
  */
-var Namespace = (function (global) {
+var Namespace = (function(global) {
   'use strict';
 
   return {
@@ -15,11 +15,12 @@ var Namespace = (function (global) {
     /**
      * Creates a global object in a single line.
      * @method create
-     * @param {String} namespace
      * @example
      *   Namespace.create('foo.bar'); // -> foo.bar
+     *
+     * @param {String} namespace
      */
-    create: function (namespace) {
+    create: function(namespace) {
       var parent = global,
           parts = namespace.split('.'),
           len = parts.length,
@@ -36,14 +37,15 @@ var Namespace = (function (global) {
     /**
      * Check for global object.
      * @method is
-     * @param {String} namespace
-     * @return {Boolean}
      * @example
      *   Namespace.is('foo.bar'); // -> false
      *   Namespace.create('foo.bar'); // -> foo.bar
      *   Namespace.is('foo.bar'); // -> true
+     *
+     * @param {String} namespace
+     * @return {Boolean} Returns true if namespace already exist.
      */
-    is: function (namespace) {
+    is: function(namespace) {
       var parent = global,
           result = false,
           parts = namespace.split('.'),
