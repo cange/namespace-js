@@ -17,6 +17,7 @@
     "grunt-notify": "~0.2.17"
   },
   "scripts": {
+    "preinstall": "npm i grunt-cli -g",
     "test": "grunt test"
   },
   "repository": {
@@ -26,7 +27,7 @@
   "keywords": [
     "namespace"
   ],
-  "author": "psykmedia(at)gmail(dot)com",
+  "author": "Christian Angermann",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cange/namespace-js/issues"
