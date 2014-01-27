@@ -6,7 +6,7 @@
     "Christian Angermann"
   ],
   "description": "A lightweight JavaScript helper checking for or creating namespace objects.",
-  "main": "lib/namespace.js",
+  "main": "src/namespace.js",
   "keywords": [
     "namespace",
     "javascript",
