@@ -1,0 +1,21 @@
+{
+  "name": "namespace-js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/cange/namespace-js",
+  "authors": [
+    "Christian Angermann"
+  ],
+  "description": "A lightweight JavaScript helper checking for or creating namespace objects.",
+  "main": "lib/namespace.js",
+  "keywords": [
+    "namespace",
+    "javascript",
+    "oop"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "spec"
+  ]
+}
