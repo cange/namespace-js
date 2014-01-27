@@ -13,14 +13,14 @@ module.exports = function(grunt) {
         spawn: false
       },
       js: {
-        files: ['Gruntfile.js', 'lib/*.js', 'spec/*.js'],
+        files: ['Gruntfile.js', 'src/*.js', 'spec/*.js'],
         tasks: ['test']
       }
     },
 
     jasmine: {
       all: {
-        src: 'lib/*.js',
+        src: 'src/*.js',
         options: {
           specs: 'spec/*_spec.js',
           helpers: 'spec/*_helper.js'
