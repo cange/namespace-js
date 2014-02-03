@@ -35,24 +35,32 @@ var Namespace = (function(global) {
     },
 
     /**
-     * Check for global object.
+     * Check for global and local objects.
      * @method is
-     * @example
-     *   Namespace.is('foo.bar'); // -> false
-     *   Namespace.create('foo.bar'); // -> foo.bar
-     *   Namespace.is('foo.bar'); // -> true
      *
-     * @param {String} namespace
+     * @param {String|Object} namespaceOrParent
+     * @param {String} [namespace]
      * @return {Boolean} Returns true if namespace already exist.
      */
-    is: function(namespace) {
+    is: function(namespaceOrParent, namespace) {
       var parent = global,
           result = false,
-          parts = namespace.split('.'),
-          len = parts.length,
           i = 0,
+          len,
+          parts,
           part
       ;
+
+      if (typeof namespaceOrParent === 'object') {
+        parent = namespaceOrParent;
+      }
+      else {
+        namespace = namespaceOrParent;
+      }
+
+      parts = namespace.split('.');
+      len = parts.length;
+
       for (; i < len; i++) {
         part = parts[i];
 

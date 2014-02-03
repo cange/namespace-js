@@ -12,8 +12,8 @@ Is compatible with all new and old browsers like IE6.
 You can create a object chain with
 
 ```javascript
-Namespace.create('foo.bar');
-foo.bar.Magic = function () {
+Namespace.create('be.awesome');
+be.awesome.Magic = function () {
   // your magic code
 };
 ```
@@ -21,5 +21,12 @@ foo.bar.Magic = function () {
 Check if a namespace exists
 
 ```javascript
-Namespace.is('foo.bar');
+Namespace.is('be.awesome');
+```
+
+Check if namespace on a local object exists
+
+```javascript
+var localObj = { be: { awesome: 'bam' } };
+Namespace.is(localObj, 'be.awesome');
 ```

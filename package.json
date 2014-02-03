@@ -1,6 +1,6 @@
 {
   "name": "namespace-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight JavaScript helper checking for or creating namespace objects.",
   "main": "Gruntfile.js",
   "directories": {
