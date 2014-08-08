@@ -1,20 +1,18 @@
 {
   "name": "namespace-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight JavaScript helper checking for or creating namespace objects.",
   "main": "Gruntfile.js",
   "directories": {
     "test": "spec"
   },
   "dependencies": {
-    "load-grunt-tasks": "~0.3.0",
-    "time-grunt": "~0.2.8"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-jasmine": "~0.5.2",
-    "grunt-notify": "~0.2.17"
+    "load-grunt-tasks": "^0.6.0",
+    "time-grunt": "^0.4.0",
+    "grunt": "~0.4.5",
+    "grunt-contrib-jasmine": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-notify": "^0.3.1"
   },
   "scripts": {
     "preinstall": "npm i grunt-cli -g",
