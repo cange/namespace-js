@@ -8,8 +8,7 @@ Is compatible with all new and old browsers like IE6.
 You can create a object chain with
 
 ```javascript
-Namespace.create('be.awesome');
-be.awesome.Magic = function () {
+Namespace.create('be.awesome').Magic = function() {
   // your magic code
 };
 ```
@@ -24,5 +23,7 @@ Check if namespace on a local object exists
 
 ```javascript
 var localObj = { be: { awesome: 'bam' } };
-Namespace.is(localObj, 'be.awesome');
+if (Namespace.is(localObj, 'be.awesome')) {
+  Namespace.create('be.awesome');
+}
 ```

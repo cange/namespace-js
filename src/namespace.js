@@ -32,6 +32,8 @@ var Namespace = (function(global) {
         part = parts[i];
         parent = (parent[part] = parent[part] || {});
       }
+
+      return parent;
     },
 
     /**
