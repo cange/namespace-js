@@ -1,4 +1,5 @@
-# namespace-js [![Build Status](https://travis-ci.org/cange/namespace-js.svg?branch=master)](https://travis-ci.org/cange/namespace-js) [![Bower version](https://badge.fury.io/bo/namespace-js.svg?branch=master)](http://badge.fury.io/bo/namespace-js) [![Dependency Status](https://david-dm.org/cange/namespace-js.svg??branch=master)](https://david-dm.org/cange/namespace-js)
+# namespace-js
+[![Build Status](https://travis-ci.org/cange/namespace-js.svg?branch=master)](https://travis-ci.org/cange/namespace-js) [![npm version](https://badge.fury.io/js/js-namespace.svg)](https://badge.fury.io/js/js-namespace) [![Bower version](https://badge.fury.io/bo/namespace-js.svg)](http://badge.fury.io/bo/namespace-js) [![dependencies Status](https://david-dm.org/cange/namespace-js/status.svg)](https://david-dm.org/cange/namespace-js)
 
 Namespace-js is a lightweight JavaScript helper checking for or creating namespace objects.
 Is compatible with all new and old browsers like IE6.

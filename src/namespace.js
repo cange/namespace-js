@@ -79,4 +79,7 @@ var Namespace = (function(global) {
 
   };
 
-}(this));
+}(window || this));
+
+module = module || {};
+module.exports = Namespace;
