@@ -1,35 +1,32 @@
 {
-  "name": "js-namespace",
-  "version": "1.2.0",
+  "author": "Christian Angermann",
+  "bugs": {
+    "url": "https://github.com/cange/namespace-js/issues"
+  },
   "description": "A lightweight JavaScript helper checking for or creating namespace objects.",
-  "main": "src/namespace.js",
+  "devDependencies": {
+    "jest-cli": "^17.0.3"
+  },
   "directories": {
-    "test": "spec"
+    "test": "__tests__"
+  },
+  "engines": {
+    "node": ">=4.3.2"
+  },
+  "homepage": "https://github.com/cange/namespace-js",
+  "keywords": [
+    "namespace"
+  ],
+  "license": "MIT",
+  "main": "src/namespace.js",
+  "name": "js-namespace",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cange/namespace-js.git"
   },
   "scripts": {
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
-  "engines": {
-    "node": ">=4.3.2"
-  },
-  "engines": {
-    "node": ">=4.3.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cange/namespace-js.git"
-  },
-  "keywords": [
-    "namespace"
-  ],
-  "author": "Christian Angermann",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cange/namespace-js/issues"
-  },
-  "homepage": "https://github.com/cange/namespace-js",
-  "devDependencies": {
-    "jest-cli": "^17.0.3"
-  }
+  "version": "1.2.0"
 }
