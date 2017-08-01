@@ -76,10 +76,9 @@ var Namespace = (function(global) {
 
       return result;
     }
-
   };
-
 }(window || this));
 
-module = module || {};
-module.exports = Namespace;
+if(typeof exports === 'object' && typeof module === 'object') {
+  module.exports = Namespace
+}

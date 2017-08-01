@@ -1,4 +1,4 @@
-var Namespace = require('../src/namespace')
+var Namespace = require('./namespace')
 
 'use strict'
 

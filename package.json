@@ -5,7 +5,10 @@
   },
   "description": "A lightweight JavaScript helper checking for or creating namespace objects.",
   "devDependencies": {
-    "jest-cli": "^17.0.3"
+    "babel-loader": "^7.1.1",
+    "bundle-loader": "^0.5.5",
+    "jest": "^20.0.4",
+    "webpack": "^3.4.1"
   },
   "directories": {
     "test": "__tests__"
@@ -18,15 +21,22 @@
     "namespace"
   ],
   "license": "MIT",
-  "main": "src/namespace.js",
+  "main": "dist/namespace.js",
   "name": "js-namespace",
   "repository": {
     "type": "git",
     "url": "https://github.com/cange/namespace-js.git"
   },
   "scripts": {
+    "build": "webpack -p",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
-  "version": "1.2.2"
+  "files": [
+    "src/namespace.js",
+    "src/namespace.min.js",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "version": "1.3.0-4"
 }
