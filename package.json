@@ -1,6 +1,6 @@
 {
   "author": "Christian Angermann",
-  "version": "2.0.0-0",
+  "version": "2.0.0-1",
   "description": "A lightweight JavaScript helper checking for or creating namespace objects.",
   "license": "MIT",
   "homepage": "https://github.com/cange/namespace-js",
