@@ -4,13 +4,11 @@
 Namespace-js is a lightweight JavaScript helper checking for or creating namespace objects.
 
 ## Install
-
 ```shell
 npm install js-namespace --save
 ```
 
 ## Usage
-
 You can create a object chain with
 
 ```javascript
@@ -45,6 +43,11 @@ if (Namespace.is(localObj, 'be.awesome')) {
 }
 ```
 
-## Licensing
+## Deployment
+A node module package will be published by setting a new version.
+```shell
+npm version <version> -m '%s – <reason>'
+```
 
+## Licensing
 MIT
