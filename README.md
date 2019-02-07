@@ -44,7 +44,7 @@ if (Namespace.is(localObj, 'be.awesome')) {
 ```
 
 ## Deployment
-A node module package will be published by setting a new version.
+A node module package will be published by setting a new version. (Make sure you are login in npm registry)
 ```shell
 npm version <version> -m '%s – <reason>'
 ```
