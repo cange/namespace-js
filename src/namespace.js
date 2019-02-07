@@ -7,7 +7,7 @@
  * @class Namespace
  * @type function
  */
-var Namespace = (function(global) {
+export default (function(global) {
   'use strict';
 
   return {
@@ -78,7 +78,3 @@ var Namespace = (function(global) {
     }
   };
 }(window || this));
-
-if(typeof exports === 'object' && typeof module === 'object') {
-  module.exports = Namespace
-}

@@ -2,13 +2,16 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
+  mode: 'development',
   entry: {
-    index: './src/namespace.js',
+    namespace: './src/namespace.js',
   },
   output: {
-    path: path.resolve(__dirname, './src'),
-    filename: 'namespace.min.js',
-    libraryTarget: 'commonjs2'
+    filename: '[name].js',
+    library: '[name]',
+    libraryTarget: 'umd',
+    umdNamedDefine: true,
+    path: path.join(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -22,7 +25,5 @@ module.exports = {
   resolve: {
     extensions: ['.js'],
     modules: ['node_modules']
-  },
-  devtool: 'cheap-module-inline-source-map'
+  }
 }
-

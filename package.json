@@ -1,26 +1,24 @@
 {
   "author": "Christian Angermann",
-  "bugs": {
-    "url": "https://github.com/cange/namespace-js/issues"
-  },
+  "version": "2.0.0",
   "description": "A lightweight JavaScript helper checking for or creating namespace objects.",
+  "license": "MIT",
+  "homepage": "https://github.com/cange/namespace-js",
   "devDependencies": {
-    "babel-loader": "^7.1.1",
-    "bundle-loader": "^0.5.5",
-    "jest": "^20.0.4",
-    "webpack": "^3.4.1"
-  },
-  "directories": {
-    "test": "__tests__"
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "jest": "^24.1.0",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-merge": "^4.2.1"
   },
   "engines": {
-    "node": ">=4.3.2"
+    "node": "^6.14.0 || ^8.10.0 || >=9.10.0"
   },
-  "homepage": "https://github.com/cange/namespace-js",
   "keywords": [
     "namespace"
   ],
-  "license": "MIT",
   "main": "dist/namespace.js",
   "name": "js-namespace",
   "repository": {
@@ -28,15 +26,17 @@
     "url": "https://github.com/cange/namespace-js.git"
   },
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack --config webpack.prod.js",
+    "build:dev": "webpack --config webpack.dev.js",
     "test": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "postversion": "git push --follow-tags && yarn build && npm publish"
+  },
+  "bugs": {
+    "url": "https://github.com/cange/namespace-js/issues"
   },
   "files": [
-    "src/namespace.js",
-    "src/namespace.min.js",
-    "CHANGELOG.md",
-    "README.md"
-  ],
-  "version": "1.3.0"
+    "dist/namespace.js",
+    "src/namespace.js"
+  ]
 }
