@@ -3,7 +3,7 @@
 * provide `Namespace` object globally to keep support ECMAScript5 environments
 
 # 2.0.0
-## Remove
+## Removed
 * **[BREAKING]** outdated bower setup
 * **[BREAKING]** outdated Node 4 support
 
