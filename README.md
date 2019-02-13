@@ -12,6 +12,10 @@ npm install js-namespace --save
 You can create a object chain with
 
 ```javascript
+import Namespace from 'js-namespace'
+// or
+// const Namespace = require('js-namespace')
+
 Namespace.create('be.awesome'); // => be: Object { awesome: Object }
 
 // or direct assignment

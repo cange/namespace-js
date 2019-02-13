@@ -1,3 +1,7 @@
+# 2.0.1
+## Fixed
+* provide `Namespace` object globally to keep support ECMAScript5 environments
+
 # 2.0.0
 ## Remove
 * **[BREAKING]** outdated bower setup

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>namespace-js demo page</title>
+</head>
+<body>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+      Namespace.create('foo.bar').doSomething = () => {
+        console.log('"foo.bar.doSomething" has been executed')
+      }
+    })
+  </script>
+</body>
+</html>
