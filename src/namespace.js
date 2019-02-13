@@ -1,13 +1,4 @@
-/**!
- * @author Christian Angermann https://github.com/cange/namespace-js
- * @license MIT
- */
-/**
- * @module Namespace
- * @class Namespace
- * @type function
- */
-export default (function(global) {
+module.exports = (function(global) {
   'use strict';
 
   return {

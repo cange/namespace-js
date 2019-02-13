@@ -1,5 +1,5 @@
 # namespace-js
-[![Build Status](https://travis-ci.org/cange/namespace-js.svg?branch=master)](https://travis-ci.org/cange/namespace-js) [![npm version](https://badge.fury.io/js/js-namespace.svg)](https://badge.fury.io/js/js-namespace) [![Bower version](https://badge.fury.io/bo/namespace-js.svg)](http://badge.fury.io/bo/namespace-js)
+[![Build Status](https://travis-ci.org/cange/namespace-js.svg?branch=master)](https://travis-ci.org/cange/namespace-js) [![npm version](https://badge.fury.io/js/js-namespace.svg)](https://badge.fury.io/js/js-namespace)
 
 Namespace-js is a lightweight JavaScript helper checking for or creating namespace objects.
 
@@ -12,6 +12,10 @@ npm install js-namespace --save
 You can create a object chain with
 
 ```javascript
+import Namespace from 'js-namespace'
+// or
+// const Namespace = require('js-namespace')
+
 Namespace.create('be.awesome'); // => be: Object { awesome: Object }
 
 // or direct assignment
