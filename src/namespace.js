@@ -1,71 +1,64 @@
 module.exports = (function(global) {
-  'use strict';
-
   return {
-
     /**
-     * Creates a global object in a single line.
-     * @method create
+     * Creates a global object in a single line
      * @example
      *   Namespace.create('foo.bar'); // -> foo.bar
-     *
      * @param {String} namespace
      */
-    create: function(namespace) {
-      var parent = global,
-          parts = namespace.split('.'),
-          len = parts.length,
-          i = 0,
-          part
-      ;
+    create: (namespace) => {
+      let parent = global
+      const parts = namespace.split('.')
+      const len = parts.length
+      let i = 0
+      let part
+      
 
       for (; i < len; i++) {
-        part = parts[i];
-        parent = (parent[part] = parent[part] || {});
+        part = parts[i]
+        parent = (parent[part] = parent[part] || {})
       }
 
-      return parent;
+      return parent
     },
 
     /**
      * Check for global and local objects.
-     * @method is
-     *
      * @param {String|Object} namespaceOrParent
      * @param {String} [namespace]
-     * @return {Boolean} Returns true if namespace already exist.
+     * @return {Boolean} Returns true or if namespace already exist
      */
-    is: function(namespaceOrParent, namespace) {
-      var parent = global,
-          result = false,
-          i = 0,
-          len,
-          parts,
-          part
-      ;
+    is: (namespaceOrParent, namespace) => {
+      let parent = global
+      let result = false
+      let i = 0
+      let len
+      let parts
+      let part
+      
 
       if (typeof namespaceOrParent === 'object') {
-        parent = namespaceOrParent;
+        parent = namespaceOrParent
       }
       else {
-        namespace = namespaceOrParent;
+        namespace = namespaceOrParent
       }
 
-      parts = namespace.split('.');
-      len = parts.length;
+      parts = namespace.split('.')
+      len = parts.length
 
       for (; i < len; i++) {
-        part = parts[i];
+        part = parts[i]
 
         if (!parent[part]) {
-          result = false;
-          return false;
+          result = false
+          return false
         }
-        parent = parent[part];
-        result = true;
+        parent = parent[part]
+        result = true
       }
 
-      return result;
+      return result
     }
-  };
-}(window || this));
+  }
+}(window || this))
