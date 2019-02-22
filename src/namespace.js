@@ -1,14 +1,9 @@
 module.exports = (function(global) {
-
-
   return {
-
     /**
      * Creates a global object in a single line
-
      * @example
      *   Namespace.create('foo.bar'); // -> foo.bar
-
      * @param {String} namespace
      */
     create: (namespace) => {
@@ -29,11 +24,9 @@ module.exports = (function(global) {
 
     /**
      * Check for global and local objects.
-
-
      * @param {String|Object} namespaceOrParent
      * @param {String} [namespace]
-     * @return {Boolean} Returns true if namespace already exist.
+     * @return {Boolean} Returns true or if namespace already exist
      */
     is: (namespaceOrParent, namespace) => {
       let parent = global
