@@ -9,7 +9,7 @@ npm install js-namespace --save
 ```
 
 ## Usage
-You can create a object chain with
+You can create an object chain with
 
 ```javascript
 import Namespace from 'js-namespace'
@@ -48,7 +48,7 @@ if (Namespace.is(localObj, 'be.awesome')) {
 ```
 
 ## Deployment
-A node module package will be published by setting a new version. (Make sure you are login in npm registry)
+A node module package will be published by setting a new version. (Make sure you are logged in via npm registry)
 ```shell
 npm version <version> -m '%s – <reason>'
 ```
