@@ -12,7 +12,7 @@ module.exports = (function(global) {
      * @param {String} namespace
      */
     create: (namespace) => {
-      const parent = global
+      let parent = global
       const parts = namespace.split('.')
       const len = parts.length
       let i = 0
@@ -36,8 +36,8 @@ module.exports = (function(global) {
      * @return {Boolean} Returns true if namespace already exist.
      */
     is: (namespaceOrParent, namespace) => {
-      var parent = global
-      const result = false
+      let parent = global
+      let result = false
       let i = 0
       let len
       let parts
